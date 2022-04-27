@@ -1,0 +1,20 @@
+#include <stdio.h>
+int length(char*);
+
+
+int main(){
+    int valor;
+    char string[]= "jejeje hola";
+    valor = length(string);
+    printf("resultado %d",valor);
+}
+
+int length(char* string){
+    int longitud = 0;
+    while(*string){
+        printf("resultado %d\n",string[longitud]);
+        longitud += 1;
+        string += 1;
+    }
+    return longitud;
+} 
